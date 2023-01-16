@@ -49,13 +49,13 @@ const Login = (props) => {
     );
   };
 
-  const validateEmailHandler = () => {
-    setEmailIsValid(enteredEmail.includes('@'));
-  };
+  // const validateEmailHandler = () => {
+  //   setEmailIsValid(enteredEmail.includes('@'));
+  // };
 
-  const validatePasswordHandler = () => {
-    setPasswordIsValid(enteredPassword.trim().length > 6);
-  };
+  // const validatePasswordHandler = () => {
+  //   setPasswordIsValid(enteredPassword.trim().length > 6);
+  // };
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -76,7 +76,7 @@ const Login = (props) => {
             id="email"
             value={enteredEmail}
             onChange={emailChangeHandler}
-            onBlur={validateEmailHandler}
+            // onBlur={validateEmailHandler}
           />
         </div>
         <div
@@ -90,7 +90,7 @@ const Login = (props) => {
             id="password"
             value={enteredPassword}
             onChange={passwordChangeHandler}
-            onBlur={validatePasswordHandler}
+            // onBlur={validatePasswordHandler}
           />
         </div>
         <div className={classes.actions}>
