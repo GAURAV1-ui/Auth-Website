@@ -44,13 +44,13 @@ const Login = (props) => {
 
   const authCtx = useContext(AuthContext);
 
-  useEffect(() => {
-    console.log('EFFECT RUNNING');
+  // useEffect(() => {
+  //   console.log('EFFECT RUNNING');
 
-    return () => {
-      console.log('EFFECT CLEANUP');
-    };
-  }, []);
+  //   return () => {
+  //     console.log('EFFECT CLEANUP');
+  //   };
+  // }, []);
 
   const { isValid: emailIsValid } = emailState;
   const { isValid: passwordIsValid} = passwordState;
